@@ -1,6 +1,6 @@
 // <a name="readme-top"></a>
 
-// <br/>
+// <br />
 // <div align="center">
 //   <a href="">
 //     <img src="" alt="Logo" width="200" height="200">
@@ -129,7 +129,65 @@
 // TODO: Include packages needed for this application
 
 // TODO: Create an array of questions for user input
-const questions = [];
+const questions = [
+    {
+        type: 'input',
+        message: "What is your Github username?",
+        name: 'username',
+        default: 'yourUsername',
+    },
+    {
+        type: 'input',
+        message: "What is the name of your Github repository?",
+        name: 'repo',
+        default: 'repo',
+    },
+    {
+        type: 'input',
+        message: "What is your project's title?",
+        name: 'title',
+        default: 'title',
+    },
+    {
+        type: 'input',
+        message: "If applicable, what is your project's tagline?",
+        name: 'tagline',
+        default: 'tagline',
+    },
+    {
+        type: 'input',
+        message: "Please write a description of your project.",
+        name: 'description',
+        default: 'Enter description here',
+    },
+    {
+        type: 'input',
+        message: "List the frameworks, libraries, or other tools used in the project.",
+        name: 'builtWith',
+        default: 'Built with',
+    },
+    {
+        type: 'input',
+        message: "Provide instructions on how to set up and run the project for the Getting Started section.",
+        name: 'gettingStarted',
+    },
+    {
+        type: 'input',
+        message: "Provide examples or instructions on how to use the project.",
+        name: 'usage',
+    },
+    {
+        type: 'input',
+        message: "If applicable, explain how others can contribute to the project.",
+        name: 'contributing',
+    },
+    {
+        type: 'list',
+        message: "Choose a license for your project:",
+        choices: ['MIT', 'Apache', 'GPL', 'BSD', 'None'],
+        name: 'license',
+    },
+];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
