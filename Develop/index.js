@@ -127,6 +127,7 @@
 
 
 // TODO: Include packages needed for this application
+const inquirer = require('inquirer');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -162,7 +163,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: "List the frameworks, libraries, or other tools used in the project.",
+        message: "List the frameworks, libraries, or other tools used in the project (separate with commas).",
         name: 'builtWith',
         default: 'Built with',
     },
@@ -178,6 +179,11 @@ const questions = [
     },
     {
         type: 'input',
+        message: "List the key features of the project (separate with commas).",
+        name: 'features',
+    },
+    {
+        type: 'input',
         message: "If applicable, explain how others can contribute to the project.",
         name: 'contributing',
     },
@@ -190,10 +196,38 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
+function writeToFile(fileName, data) {
+    const builtWithSection = data.builtWith.join('\n');
+    const featuresSection = data.features.map((feature) => `- [x] ${feature}`).join('\n');
+    data.templateMarkdown = data.templateMarkdown
+      .replace('{{builtWith}}', builtWithSection)
+      .replace('{{features}}', featuresSection);
+    fs.writeFile(fileName, data.templateMarkdown, (err) =>
+      err ? console.error(err) : console.log('Success!')
+    );
+  }
+  
+  // TODO: Create a function to initialize app
+  function init() {
+    inquirer.prompt(questions).then((answers) => {
+      const frameworks = answers.builtWith.split(',').map((fw) => fw.trim());
+      const data = {
+        username: answers.username,
+        repo: answers.repo,
+        title: answers.title,
+        tagline: answers.tagline,
+        description: answers.description,
+        builtWith: frameworks,
+        features: answers.features.split(',').map((feature) => feature.trim()),
+        gettingStarted: answers.gettingStarted,
+        usage: answers.usage,
+        contributing: answers.contributing,
+        license: answers.license,
+        templateMarkdown: templateMarkdown,
+      };
+      writeToFile('README.md', data);
+    });
+  }
+  
+  // Function call to initialize app
+  init();

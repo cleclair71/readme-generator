@@ -51,11 +51,34 @@ function generateMarkdown(userResponses, userInfo) {
   templateMarkdqwn += tabCon;
 
   // add built with to template
+  templateMarkdqwn += `
+  ### Built With
+  ${{builtWith}}
+  
+  <p align="right">(<a href="#readme-top">back to top</a>)</p>
+  `
 
   // add getting started to template
+  templateMarkdqwn += `
+  ## Getting Started
+  ${userResponses.gettingStarted}
 
+  <p align="right">(<a href="#readme-top">back to top</a>)</p>
+  `
   // add usage to template
+  templateMarkdqwn += `
+  ## Usage
+  ${userResponses.usage}
 
+  <p align="right">(<a href="#readme-top">back to top</a>)</p>
+  `
+  // add features to template
+  templateMarkdqwn += `
+  ## Features
+  ${{features}}
+  
+  <p align="right">(<a href="#readme-top">back to top</a>)</p>
+  `
   // add contributing to template
 
   // add license to template
