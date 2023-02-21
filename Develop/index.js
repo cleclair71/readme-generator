@@ -128,6 +128,10 @@
 
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
+const util = require('util');
+const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown.js');
+const api = require('./utils/api.js');
 
 // TODO: Create an array of questions for user input
 const questions = [

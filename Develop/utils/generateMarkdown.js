@@ -80,11 +80,20 @@ function generateMarkdown(userResponses, userInfo) {
   <p align="right">(<a href="#readme-top">back to top</a>)</p>
   `
   // add contributing to template
-
+`  ## Contributing
+  ${userResponses.contributing}
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+`
   // add license to template
-
+  `  ## License
+  ${userResponses.license}
+  
+  <p align="right">(<a href="#readme-top">back to top</a>)</p>`
   // add contact to template
-
+`  ## Contact
+  ${userResponses.contact}
+  
+  <p align="right">(<a href="#readme-top">back to top</a>)</p>`
  
  
 
