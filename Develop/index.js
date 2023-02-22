@@ -128,10 +128,11 @@
 
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-const util = require('util');
+const path = require('path');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
-const api = require('./utils/api.js');
+
+// const api = require('./utils/api.js');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -140,12 +141,6 @@ const questions = [
         message: "What is your Github username?",
         name: 'username',
         default: 'yourUsername',
-    },
-    {
-        type: 'input',
-        message: "What is the name of your Github repository?",
-        name: 'repo',
-        default: 'repo',
     },
     {
         type: 'input',
@@ -173,8 +168,8 @@ const questions = [
     },
     {
         type: 'input',
-        message: "Provide instructions on how to set up and run the project for the Getting Started section.",
-        name: 'gettingStarted',
+        message: "Provide instructions on how to set up and run the project for the Installation section.",
+        name: 'installation',
     },
     {
         type: 'input',
@@ -183,12 +178,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: "List the key features of the project (separate with commas).",
-        name: 'features',
-    },
-    {
-        type: 'input',
-        message: "If applicable, explain how others can contribute to the project.",
+        message: "If applicable, what are the github usernames of the project's contributors?",
         name: 'contributing',
     },
     {
@@ -197,41 +187,78 @@ const questions = [
         choices: ['MIT', 'Apache', 'GPL', 'BSD', 'None'],
         name: 'license',
     },
+    {
+        type: 'input',
+        message: "What resources did you use to create this project? (separate with commas)",
+        name: 'resources',
+    },
+    {
+        type: 'input',
+        message: "What is the link to your repository?",
+        name: 'repo',
+        default: 'repo',
+    },
+    {
+        type: 'input',
+        message: "What is your email",
+        name: 'email',
+        default: 'email',
+    },
+    {
+        type: 'input',
+        message: "Explain any libraries used for testing your software, and give explicit instructions on how to run those tests.",
+        name: 'tests',
+        default: 'tests',
+    },
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    const builtWithSection = data.builtWith.join('\n');
-    const featuresSection = data.features.map((feature) => `- [x] ${feature}`).join('\n');
-    data.templateMarkdown = data.templateMarkdown
-      .replace('{{builtWith}}', builtWithSection)
-      .replace('{{features}}', featuresSection);
-    fs.writeFile(fileName, data.templateMarkdown, (err) =>
-      err ? console.error(err) : console.log('Success!')
-    );
+    // const builtWithSection = data.builtWith.join('\n');
+    // const featuresSection = data.features.map((feature) => `- [x] ${feature}`).join('\n');
+    // data.templateMarkdown = data.templateMarkdown
+    //   .replace('{{builtWith}}', builtWithSection)
+    //   .replace('{{features}}', featuresSection);
+     return fs.writeFile(path.join (process.cwd(), fileName), data); 
   }
-  
+//   const writeFileA = util.promisify(writeToFile);
+
   // TODO: Create a function to initialize app
   function init() {
     inquirer.prompt(questions).then((answers) => {
-      const frameworks = answers.builtWith.split(',').map((fw) => fw.trim());
-      const data = {
-        username: answers.username,
-        repo: answers.repo,
-        title: answers.title,
-        tagline: answers.tagline,
-        description: answers.description,
-        builtWith: frameworks,
-        features: answers.features.split(',').map((feature) => feature.trim()),
-        gettingStarted: answers.gettingStarted,
-        usage: answers.usage,
-        contributing: answers.contributing,
-        license: answers.license,
-        templateMarkdown: templateMarkdown,
-      };
-      writeToFile('README.md', data);
+        console.log ("Generating markdown...");
+        writeToFile('README.md', generateMarkdown(...answers));
+    //   const frameworks = answers.builtWith.split(',').map((fw) => fw.trim());
+    //   const data = {
+    //     username: answers.username,
+    //     repo: answers.repo,
+    //     title: answers.title,
+    //     tagline: answers.tagline,
+    //     description: answers.description,
+    //     builtWith: frameworks,
+    //     features: answers.features.split(',').map((feature) => feature.trim()),
+    //     gettingStarted: answers.gettingStarted,
+    //     usage: answers.usage,
+    //     contributing: answers.contributing,
+    //     license: answers.license,
+    //     templateMarkdown: templateMarkdown,
+    //   };
+     
     });
   }
   
   // Function call to initialize app
-  init();
+  init() {
+     //api
+    //  const githubUser = await api.getUser(data.username);
+    //  console.log("Your Github user info: ", githubUser.data);
+    //    data.profileImage = githubUser.data.avatar_url;
+    //    console.log("Your profile image: ", data.profileImage);
+
+    //    console.log ("Generating markdown...");
+    //    const markdown = generateMarkdown(data);
+    //    console.log(markdown);
+    //    console.log("Writing to file...");
+    //    await
+    //  writeFileA('README.md', data);
+  };
