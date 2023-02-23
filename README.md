@@ -21,17 +21,18 @@
 
 * [Contributing](#contributing)
 
-* [Tests](#tests)
-
-* [Questions](#email)
+* [Resources](#resources)
  
 * [license](#license)
+
+* [Questions](#questions)
 
 </details>
 </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<a name="description"></a>
 ## :rocket: About The Project
 <p align="center">
   <img src="/Assets/img/Capture.JPG" alt="Screenshot"/>
@@ -46,7 +47,7 @@ The application also provides a list of license options to choose from, with the
 To make navigation easy, the README includes a Table of Contents with clickable links that take users directly to the corresponding section of the document. With our command-line application, creating a comprehensive and polished README has never been easier.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+<a name="installation"></a>
 ## :hammer_and_wrench: Installation
 
 1. Clone the repository 
@@ -77,7 +78,9 @@ After answering all the prompts, your README file will be generated and saved as
 Additionally, the README will have some automatically generated badges for your repository courtesy of shields.io.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-  
+
+  <a name="usage"></a>
+
 ## :computer: Usage
 <div align="center">
 <a href="https://drive.google.com/file/d/1qBYG2vbscJXd2rnEmpjzx8Tr6mmLNwMo/view">
@@ -92,7 +95,7 @@ Additionally, the README will have some automatically generated badges for your 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
   
 
- 
+ <a name="contributing"></a>
 ## :handshake: Contributing
 
 Thank you for your interest in contributing to this project! By contributing, you can help make this project even better for everyone.
@@ -119,11 +122,13 @@ git push origin your-branch-name
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<a name="license"></a>
 ## :clipboard: License
 MIT
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<a name="resources"></a>
 ## :mag_right: Resources
 
 * [Emoji Cheatsheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
@@ -134,6 +139,7 @@ MIT
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<a name="questions"></a>
 ## :mailbox_with_no_mail: Questions?
 
 If you have any questions about this project, please don't hesitate to reach out to me. I'm always happy to help and provide additional information.
