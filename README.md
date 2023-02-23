@@ -48,11 +48,22 @@ To make navigation easy, the README includes a Table of Contents with clickable 
 
 ## :hammer_and_wrench: Installation
 
-To generate your own README, start by cloning the repository to your local machine using the git clone command. 
+1. Clone the repository 
 
-Once you have the Node project on your local machine, run **npm install** to install the required npm package dependencies specified in the package.json file. 
+```bash
+git clone https://github.com/cleclair71/readme-generator.git
+```
 
-The [`inquirer`](https://www.npmjs.com/package/inquirer) package will prompt you for your inputs from the command line. To begin generating your README, navigate to the develop folder in the command line and run the command node index.js. 
+2. Install [`inquirer`](https://www.npmjs.com/package/inquirer) 
+
+```bash
+npm install inquirer
+```
+3. Run the App
+
+```bash
+\readme-generator\develop> node index.js
+```
 
 This will start the application and prompt you to answer the required prompts in the command line. 
 
