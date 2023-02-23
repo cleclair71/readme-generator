@@ -33,6 +33,8 @@
 </div>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<a name="description"></a>
+
 ## :rocket: About The Project
 
 ![screenshot](https://user-imagesexample./screenshot.JPG)
@@ -41,19 +43,23 @@ My Awesome Project is a web application built with React and Node.js that allows
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<a name="installation"></a>
+
 ## :hammer_and_wrench: Installation
 
 To install and run the project, follow these steps: 1. Clone the repository to your local machine. 2. Install the required dependencies by running 'npm install' in the root directory of the project. 3. Start the application by running 'npm start' in the root directory of the project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-  
+
+  <a name="usage"></a>
+
 ## :computer: Usage
-   To use the project, simply open the application in your web browser and start adding tasks. You can create new tasks, mark tasks as completed, and delete tasks as needed.
+  To use the project, simply open the application in your web browser and start adding tasks. You can create new tasks, mark tasks as completed, and delete tasks as needed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
   
+ <a name="contributing"></a>
 
- 
 ## :handshake: Contributing
 
 Thank you for your interest in contributing to this project! By contributing, you can help make this project even better for everyone.
@@ -82,16 +88,22 @@ If you have contributed to this project and your name is not on this list, pleas
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<a name="license"></a>
+
 ## :clipboard: License
 MIT
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<a name="tests"></a>
 
 ## :heavy_check_mark: Tests
 
 We use Jest for testing our software. To run the tests, simply run 'npm test' in the root directory of the project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<a name="questions"></a>
 
 ## :mailbox_with_no_mail: Questions?
 
