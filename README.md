@@ -9,9 +9,9 @@
     <p align="center">
       Simplify your Documentation Process with our CLI README Generator
     </p>
-  </div>
-
-### Table of Contents;
+  
+<br />
+<details><summary>Table of Contents;</summary>
 
 * [About the Project](#description) 
  
@@ -26,6 +26,9 @@
 * [Questions](#email)
  
 * [license](#license)
+
+</details>
+</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -49,7 +52,7 @@ To generate your own README, start by cloning the repository to your local machi
 
 Once you have the Node project on your local machine, run **npm install** to install the required npm package dependencies specified in the package.json file. 
 
-The * [`inquirer`](https://www.npmjs.com/package/inquirer) package will prompt you for your inputs from the command line. To begin generating your README, navigate to the develop folder in the command line and run the command node index.js. 
+The [`inquirer`](https://www.npmjs.com/package/inquirer) package will prompt you for your inputs from the command line. To begin generating your README, navigate to the develop folder in the command line and run the command node index.js. 
 
 This will start the application and prompt you to answer the required prompts in the command line. 
 
@@ -109,7 +112,7 @@ If you have any questions about this project, please don't hesitate to reach out
 
 2. **Create a new issue:** If you can't find the answer to your question in the documentation, please create a new issue in the project's issue tracker. Be sure to provide as much detail as possible about your question, including any relevant code snippets or screenshots.
 
-[My Repository](#https://github.com/cleclair71/readme-generator/tree/master) <br />
+[My Repository](https://github.com/cleclair71/readme-generator/tree/master) <br />
 
 3. **Contact cleclair71 directly:** If you prefer to contact me directly, you can do so by sending me an email at cassieleclair71@gmail.com. Please include "Question about README Generator" in the subject line so that I can quickly identify your message.
 

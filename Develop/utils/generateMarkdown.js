@@ -22,7 +22,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== 'None') {
-    return `## License`
+    return `## :clipboard: License`
   } else {
     return ''
   }
@@ -42,9 +42,10 @@ function generateMarkdown(data) {
     <p align="center">
       ${data.tagline}
     </p>
-  </div>
+  
 
-### Table of Contents;
+    <br />
+    <details><summary>Table of Contents;</summary>
 
 * [About the Project](#description) 
  
@@ -60,9 +61,11 @@ function generateMarkdown(data) {
  
 * ${renderLicenseLink(data.license)}
 
+</details>
+</div>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## About The Project
+## :rocket: About The Project
 
 ![screenshot](https://user-imagesexample./screenshot.JPG)
 
@@ -70,20 +73,20 @@ ${data.description}
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Installation
+## :hammer_and_wrench: Installation
 
 ${data.installation}
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
   
-## Usage
+## :computer: Usage
   ${data.usage}
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
   
 
  
-## Contributing
+## :handshake: Contributing
 
 Thank you for your interest in contributing to this project! By contributing, you can help make this project even better for everyone.
 
@@ -116,13 +119,13 @@ ${data.license}
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Tests
+## :heavy_check_mark: Tests
 
 ${data.tests}
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Questions?
+## :mailbox_with_no_mail: Questions?
 
 If you have any questions about this project, please don't hesitate to reach out to me. I'm always happy to help and provide additional information.
 
@@ -132,12 +135,12 @@ If you have any questions about this project, please don't hesitate to reach out
 
 2. **Create a new issue:** If you can't find the answer to your question in the documentation, please create a new issue in the project's issue tracker. Be sure to provide as much detail as possible about your question, including any relevant code snippets or screenshots.
 
-[My Repository](#${data.repo}) <br />
-[My Github](#${data.username})
+[My Repository](${data.repo}) <br />
 
-3. **Contact me directly:** If you prefer to contact me directly, you can do so by sending me an email at ${data.email}. Please include "Question about ${data.title}" in the subject line so that I can quickly identify your message.
 
-### Feedback and Suggestions
+3. **Contact [My Github](#${data.username}) directly:** If you prefer to contact me directly, you can do so by sending me an email at ${data.email}. Please include "Question about ${data.title}" in the subject line so that I can quickly identify your message.
+
+### :pray: Feedback and Suggestions
 
 I welcome feedback and suggestions for this project. If you have ideas for how to improve the project, please feel free to create a new issue or contact me directly. Your input is greatly appreciated!
  
