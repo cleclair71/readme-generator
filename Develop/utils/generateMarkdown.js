@@ -1,4 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== 'None') {
@@ -8,7 +8,7 @@ function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
+// returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== 'None') {
@@ -18,7 +18,7 @@ function renderLicenseLink(license) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
+// returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== 'None') {
@@ -28,7 +28,7 @@ function renderLicenseSection(license) {
   }
 }
 
-// TODO: Create a function to generate markdown for README
+// generate markdown for README
 function generateMarkdown(data) {
   return `
   ${renderLicenseBadge(data.license)}
@@ -161,5 +161,5 @@ I welcome feedback and suggestions for this project. If you have ideas for how t
  
 `;
 }
-
+// markdown data that will be rendered in the README file in \Develop
 module.exports = generateMarkdown;
