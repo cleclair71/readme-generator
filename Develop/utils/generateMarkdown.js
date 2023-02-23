@@ -43,7 +43,7 @@ function generateMarkdown(data) {
       ${data.tagline}
     </p>
   
-
+    </div>
     <br />
     <details><summary>Table of Contents;</summary>
 
@@ -62,7 +62,8 @@ function generateMarkdown(data) {
 * ${renderLicenseLink(data.license)}
 
 </details>
-</div>
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <a name="description"></a>

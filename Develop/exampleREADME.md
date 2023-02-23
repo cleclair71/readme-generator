@@ -10,8 +10,7 @@
     <p align="center">
       A web application for tracking daily tasks
     </p>
-  
-
+  </div>
     <br />
     <details><summary>Table of Contents;</summary>
 
@@ -30,7 +29,7 @@
 * [license](#license)
 
 </details>
-</div>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <a name="description"></a>
