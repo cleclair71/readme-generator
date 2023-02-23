@@ -78,9 +78,14 @@ Additionally, the README will have some automatically generated badges for your 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
   
 ## :computer: Usage
-  When node index.js is executed, the application will prompt you through a series of questions in the command line using the inquirer package. These questions will cover your GitHub profile and your project. 
-  
-  Based on your responses to the Inquirer prompts, the application will conditionally generate markdown and a table of contents.
+<div align="center">
+<a href="https://github.com/cleclair71/readme-generator">
+     <img src="/Assets/img/Capture.JPG" alt="head shot" width="500" height="500">
+   </a>
+   </div>
+   <p align="center"> 
+   <a href="https://drive.google.com/file/d/1qBYG2vbscJXd2rnEmpjzx8Tr6mmLNwMo/view">Walk Through Video</a>
+   </p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
   
@@ -96,12 +101,18 @@ If you would like to contribute to this project, please follow these steps:
       
 1. **Fork the Project:** Fork this project to your own GitHub account.
 
-2. **Create your Feature Branch:** Create a branch for your feature using git checkout -b your-branch-name.
-
-3. **Commit your Changes:** Commit your changes using git commit -m "Your commit message here".
-
-4. **Push to the Branch:** Push your changes to the branch using git push origin your-branch-name.
-
+2. **Create your Feature Branch:** Create a branch for your feature using:
+```bash 
+git checkout -b your-branch-name.
+```
+3. **Commit your Changes:** Commit your changes using:
+```bash 
+git commit -m "Your commit message here"
+```
+4. **Push to the Branch:** Push your changes to the branch using:
+```bash 
+git push origin your-branch-name
+```
 5. **Open a Pull Request:** Open a pull request to merge your changes into the main branch of the original project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
