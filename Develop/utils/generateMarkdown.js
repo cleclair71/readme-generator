@@ -78,6 +78,7 @@ ${data.description}
 
 <a name="installation"></a>
 
+
 ## :hammer_and_wrench: Installation
 
 ${data.installation}
@@ -92,6 +93,7 @@ ${data.installation}
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
   
  <a name="contributing"></a>
+
 
 ## :handshake: Contributing
 
@@ -123,12 +125,14 @@ If you have contributed to this project and your name is not on this list, pleas
 
 <a name="license"></a>
 
+
 ${renderLicenseSection(data.license)}
 ${data.license}
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <a name="tests"></a>
+
 
 ## :heavy_check_mark: Tests
 
@@ -137,6 +141,7 @@ ${data.tests}
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <a name="questions"></a>
+
 
 ## :mailbox_with_no_mail: Questions?
 
