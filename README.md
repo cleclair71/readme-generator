@@ -33,8 +33,9 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## :rocket: About The Project
-
-![screenshot](/Assets/img/Capture.JPG)
+<p align="center">
+  <img src="/Assets/img/Capture.JPG" alt="Screenshot"/>
+</p>
 
 Introducing our command-line application that simplifies the process of creating high-quality, professional READMEs. Our application prompts users for information about their repository and generates a README.md file with sections that include a Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions.
 
@@ -66,7 +67,7 @@ npm install inquirer
 4. Run the App
 
 ```bash
-\readme-generator\develop> node index.js
+\readme-generator\Develop> node index.js
 ```
 
 This will start the application and prompt you to answer the required prompts in the command line. 
