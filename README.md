@@ -80,7 +80,7 @@ Additionally, the README will have some automatically generated badges for your 
 ## :computer: Usage
 <div align="center">
 <a href="https://drive.google.com/file/d/1qBYG2vbscJXd2rnEmpjzx8Tr6mmLNwMo/view">
-     <img src="/Assets/img/Untitled_ Feb 23, 2023 1_44 PM (1).gif" alt="run-through gif" width="640" height="480">
+     <img src="/Assets/img/Untitled_ Feb 23, 2023 1_44 PM (1).gif" alt="run-through gif" width="740" height="480">
    </a>
    </div>
    <br />
