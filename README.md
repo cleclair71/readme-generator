@@ -34,7 +34,7 @@
 
 ## :rocket: About The Project
 
-![screenshot](https://user-imagesexample./screenshot.JPG)
+![screenshot](/Assets/img/Capture.JPG)
 
 Introducing our command-line application that simplifies the process of creating high-quality, professional READMEs. Our application prompts users for information about their repository and generates a README.md file with sections that include a Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions.
 
