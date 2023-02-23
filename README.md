@@ -79,10 +79,11 @@ Additionally, the README will have some automatically generated badges for your 
   
 ## :computer: Usage
 <div align="center">
-<a href="https://github.com/cleclair71/readme-generator">
-     <img src="/Assets/img/Capture.JPG" alt="head shot" width="500" height="500">
+<a href="https://drive.google.com/file/d/1qBYG2vbscJXd2rnEmpjzx8Tr6mmLNwMo/view">
+     <img src="/Assets/img/Untitled_ Feb 23, 2023 1_44 PM.gif" alt="run-through gif">
    </a>
    </div>
+   <br />
    <p align="center"> 
    <a href="https://drive.google.com/file/d/1qBYG2vbscJXd2rnEmpjzx8Tr6mmLNwMo/view">Walk Through Video</a>
    </p>
