@@ -1,46 +1,14 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {
-  if (license !== 'None') {
-    return `![GitHub license](https://img.shields.io/badge/license-${license}-pink.svg)`
-  } else {
-    return ''
-  }
-}
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {
-  if (license !== 'None') {
-    return `[license](#license)`
-  } else {
-    return ''
-  }
-}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {
-  if (license !== 'None') {
-    return `## License`
-  } else {
-    return ''
-  }
-}
-
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `
-  ${renderLicenseBadge(data.license)}
+  ![GitHub license](https://img.shields.io/badge/license-MIT-pink.svg)
   <a name="readme-top"></a>
  <br />
  <div align="center">
- <h1 align="center">${data.title}</h1>
+ <h1 align="center">README Generator</h1>
     <a href="">
      <img src="" alt="Logo" width="200" height="200">
    </a>
     <p align="center">
-      ${data.tagline}
+      Simplify your Documentation Process with our CLI README Generator
     </p>
   </div>
 
@@ -58,7 +26,7 @@ function generateMarkdown(data) {
 
 * [Questions](#email)
  
-* ${renderLicenseLink(data.license)}
+* [license](#license)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -66,18 +34,18 @@ function generateMarkdown(data) {
 
 ![screenshot](https://user-imagesexample./screenshot.JPG)
 
-${data.description}
+Introducing our command-line application that simplifies the process of creating high-quality, professional READMEs. Our application prompts users for information about their repository and generates a README.md file with sections that include a Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Installation
 
-${data.installation}
+To generate your own README, start by cloning the repository to your local machine using the git clone command. Once you have the Node project on your local machine, run **npm install** to install the required npm package dependencies specified in the package.json file. The * [`inquirer`](https://www.npmjs.com/package/inquirer) package will prompt you for your inputs from the command line. To begin generating your README, navigate to the develop folder in the command line and run the command node index.js. This will start the application and prompt you to answer the required prompts in the command line. After answering all the prompts, your README file will be generated and saved as README.md in the develop folder. Additionally, the README will have some automatically generated badges for your repository courtesy of shields.io.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
   
 ## Usage
-  ${data.usage}
+  When node index.js is executed, the application will prompt you through a series of questions in the command line using the inquirer package. These questions will cover your GitHub profile and your project. Based on your responses to the Inquirer prompts, the application will conditionally generate markdown and a table of contents.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
   
@@ -105,20 +73,20 @@ If you would like to contribute to this project, please follow these steps:
 
 We would like to extend our heartfelt thanks to the following individuals who have contributed to this project:
 
-* ${data.contributing}
+* N/a
 
 If you have contributed to this project and your name is not on this list, please let us know so that we can add you. Your contributions are greatly appreciated!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-${renderLicenseSection(data.license)}
-${data.license}
+## License
+MIT
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Tests
 
-${data.tests}
+test
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -132,10 +100,10 @@ If you have any questions about this project, please don't hesitate to reach out
 
 2. **Create a new issue:** If you can't find the answer to your question in the documentation, please create a new issue in the project's issue tracker. Be sure to provide as much detail as possible about your question, including any relevant code snippets or screenshots.
 
-[My Repository](#${data.repo}) <br />
-[My Github](#${data.username})
+[My Repository](#https://github.com/cleclair71/readme-generator/tree/master) <br />
+[My Github](#cleclair71)
 
-3. **Contact me directly:** If you prefer to contact me directly, you can do so by sending me an email at ${data.email}. Please include "Question about ${data.title}" in the subject line so that I can quickly identify your message.
+3. **Contact me directly:** If you prefer to contact me directly, you can do so by sending me an email at cassieleclair71@gmail.com. Please include "Question about README Generator" in the subject line so that I can quickly identify your message.
 
 ### Feedback and Suggestions
 
@@ -143,7 +111,3 @@ I welcome feedback and suggestions for this project. If you have ideas for how t
  
   <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
-`;
-}
-
-module.exports = generateMarkdown;
