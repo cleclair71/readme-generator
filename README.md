@@ -29,7 +29,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## About The Project
+## :rocket: About The Project
 
 ![screenshot](https://user-imagesexample./screenshot.JPG)
 
@@ -43,7 +43,7 @@ To make navigation easy, the README includes a Table of Contents with clickable 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Installation
+## :hammer_and_wrench: Installation
 
 To generate your own README, start by cloning the repository to your local machine using the git clone command. 
 
@@ -59,7 +59,7 @@ Additionally, the README will have some automatically generated badges for your 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
   
-## Usage
+## :computer: Usage
   When node index.js is executed, the application will prompt you through a series of questions in the command line using the inquirer package. These questions will cover your GitHub profile and your project. 
   
   Based on your responses to the Inquirer prompts, the application will conditionally generate markdown and a table of contents.
@@ -68,7 +68,7 @@ Additionally, the README will have some automatically generated badges for your 
   
 
  
-## Contributing
+## :handshake: Contributing
 
 Thank you for your interest in contributing to this project! By contributing, you can help make this project even better for everyone.
 
@@ -86,24 +86,20 @@ If you would like to contribute to this project, please follow these steps:
 
 5. **Open a Pull Request:** Open a pull request to merge your changes into the main branch of the original project.
 
-### Contributors
-
-If you have contributed to this project and your name is not on this list, please let us know so that we can add you. Your contributions are greatly appreciated!
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## License
+## :clipboard: License
 MIT
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Tests
+## :heavy_check_mark: Tests
 
 test
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Questions?
+## :mailbox_with_no_mail: Questions?
 
 If you have any questions about this project, please don't hesitate to reach out to me. I'm always happy to help and provide additional information.
 
@@ -115,9 +111,9 @@ If you have any questions about this project, please don't hesitate to reach out
 
 [My Repository](#https://github.com/cleclair71/readme-generator/tree/master) <br />
 
-3. **Contact cleclair71                           directly:** If you prefer to contact me directly, you can do so by sending me an email at cassieleclair71@gmail.com. Please include "Question about README Generator" in the subject line so that I can quickly identify your message.
+3. **Contact cleclair71 directly:** If you prefer to contact me directly, you can do so by sending me an email at cassieleclair71@gmail.com. Please include "Question about README Generator" in the subject line so that I can quickly identify your message.
 
-### Feedback and Suggestions
+### :pray: Feedback and Suggestions
 
 I welcome feedback and suggestions for this project. If you have ideas for how to improve the project, please feel free to create a new issue or contact me directly. Your input is greatly appreciated!
  
