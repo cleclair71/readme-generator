@@ -3,8 +3,8 @@
  <br />
  <div align="center">
  <h1 align="center">README Generator</h1>
-    <a href="">
-     <img src="" alt="Logo" width="200" height="200">
+    <a href="https://github.com/cleclair71/readme-generator">
+     <img src="/Assets/img/README.png" alt="Logo" width="200" height="200">
    </a>
     <p align="center">
       Simplify your Documentation Process with our CLI README Generator
@@ -53,13 +53,17 @@ To make navigation easy, the README includes a Table of Contents with clickable 
 ```bash
 git clone https://github.com/cleclair71/readme-generator.git
 ```
+2. Change the Working Directory
 
-2. Install [`inquirer`](https://www.npmjs.com/package/inquirer) 
+```bash
+cd readme-generator
+```
+3. Install [`inquirer`](https://www.npmjs.com/package/inquirer)
 
 ```bash
 npm install inquirer
 ```
-3. Run the App
+4. Run the App
 
 ```bash
 \readme-generator\develop> node index.js
@@ -107,9 +111,13 @@ MIT
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## :heavy_check_mark: Tests
+## :mag_right: Resources
 
-test
+* [Emoji Cheatsheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
+* [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+* [Git Ignore and .gitignore](https://www.w3schools.com/git/git_ignore.asp?remote=github)
+* [Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+* [How To Create Interactive Command-line Prompts with Inquirer.js](https://www.digitalocean.com/community/tutorials/nodejs-interactive-command-line-prompts)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -123,10 +131,16 @@ If you have any questions about this project, please don't hesitate to reach out
 
 2. **Create a new issue:** If you can't find the answer to your question in the documentation, please create a new issue in the project's issue tracker. Be sure to provide as much detail as possible about your question, including any relevant code snippets or screenshots.
 
-[My Repository](https://github.com/cleclair71/readme-generator/tree/master) <br />
-
 3. **Contact cleclair71 directly:** If you prefer to contact me directly, you can do so by sending me an email at cassieleclair71@gmail.com. Please include "Question about README Generator" in the subject line so that I can quickly identify your message.
-
+<div align="center">
+<a href="https://github.com/cleclair71/readme-generator">
+     <img src="/Assets/img/cassielogo.png" alt="head shot" width="150" height="150">
+   </a>
+   </div>
+   <p align="center"> 
+   <a href="https://github.com/cleclair71/readme-generator/tree/master">My Repository</a>
+   </p>
+   
 ### :pray: Feedback and Suggestions
 
 I welcome feedback and suggestions for this project. If you have ideas for how to improve the project, please feel free to create a new issue or contact me directly. Your input is greatly appreciated!
